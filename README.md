@@ -6,8 +6,17 @@ A containerized nginx web server built with Docker, pushed to Docker Hub, deploy
 
 > README based on notes written during implementation. Full unedited notes available in the [Wiki](https://github.com/dvidosic/devops-challenge/wiki).
 
-**Part 1 — Live at:** `http://20.203.245.187`  
-**Part 2 — Live at:** `http://20.250.80.162`
+**Part 1 — Live at:** [http://20.203.245.187](http://20.203.245.187)
+
+<img width="1914" height="1032" alt="Screenshot_8" src="https://github.com/user-attachments/assets/90f93396-e484-4785-9fc8-a0328c9255c1" />
+
+---
+
+
+**Part 2 — Live at:** [http://20.250.80.162](http://20.250.80.162)
+
+<img width="1919" height="1040" alt="Screenshot_9" src="https://github.com/user-attachments/assets/53fcc73d-17d1-42de-8106-d9af1a74002d" />
+
 
 ---
 
@@ -179,6 +188,9 @@ helm install traefik traefik/traefik --namespace traefik
 
 After installation Traefik received external IP `20.250.80.162` from Azure.
 
+<img width="622" height="46" alt="Screenshot_11" src="https://github.com/user-attachments/assets/7bb7e9f6-3db6-4935-b9a2-c9fa42f8c635" />
+
+
 ### How Traffic Flows
 
 1. Browser sends HTTP GET to `http://20.250.80.162`
@@ -293,3 +305,7 @@ At the time of running Terraform, all 3 were already in use.
 correctly defined — the failure was a subscription limitation, not a
 code issue. The remaining 5 resources that were created before the error were
 cleaned up with `terraform destroy`.
+
+<img width="932" height="158" alt="Screenshot_14" src="https://github.com/user-attachments/assets/ffe31c5b-cd32-47c5-bde5-b0c9e5a8286c" />
+
+
