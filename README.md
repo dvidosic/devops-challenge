@@ -242,6 +242,9 @@ az provider show --namespace Microsoft.ContainerService --query registrationStat
 Terraform code is provided in the `terraform/` directory to provision the same
 infrastructure declaratively instead of manually via Azure CLI.
 
+> Terraform code was written with AI assistance (Claude) and reviewed afterwards
+> for this project's specific Azure configuration and region constraints.
+
 ### Structure
 
 ```
