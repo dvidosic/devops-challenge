@@ -70,12 +70,21 @@ index.html → name displayed
 
 ```
 devops-challenge/
-├── Dockerfile            # Custom nginx image definition
-├── index.html            # HTML page served by nginx (my name)
-├── deployment.yaml       # Kubernetes Deployment — 2 nginx replicas
-├── service.yaml          # Kubernetes Service — ClusterIP internal endpoint
-├── ingress.yaml          # Kubernetes Ingress — Traefik routing rules
-└── README.md
+├── Dockerfile              # Custom nginx image definition
+├── index.html              # HTML page served by nginx (my name)
+├── deployment.yaml         # Kubernetes Deployment — 2 nginx replicas
+├── service.yaml            # Kubernetes Service — ClusterIP internal endpoint
+├── ingress.yaml            # Kubernetes Ingress — Traefik routing rules
+├── README.md
+└── terraform/
+    ├── vm/
+    │   ├── main.tf         # VM, VNet, NSG, disk, NIC, public IP
+    │   ├── variables.tf    # Configurable values
+    │   └── outputs.tf      # Public IP, SSH command
+    └── aks/
+        ├── main.tf         # AKS cluster, identity, network profile
+        ├── variables.tf    # Configurable values
+        └── outputs.tf      # Cluster name, API endpoint, kubeconfig
 ```
 
 ---
