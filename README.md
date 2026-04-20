@@ -1,4 +1,4 @@
-# DevOps Internship Challenge
+# DevOps Challenge
 
 ## What I Built
 
